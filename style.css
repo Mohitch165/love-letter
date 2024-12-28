@@ -78,7 +78,7 @@ body {
 
 .card {
 	position: absolute;
-	background-color: #eae2b7;
+	background-color: #F8B6B5;
 	width: 270px;
 	height: 170px;
 	top: 5px;
@@ -324,14 +324,15 @@ body {
 }
 
 .modal-content {
-	text-align: center;
+	text-align: justify;
 	scrollbar-width: none;
-	background-color: #eae2b7;
+	background-color: #F8B6B5;
 	box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
 	outline: 3px dotted #003049;
 	outline-offset: -20px;
 	padding: 30px;
 }
+
 
 .modal-content::-webkit-scrollbar {
 	display: none;
@@ -354,6 +355,7 @@ body .game {
 	right: 0;
 	/* top: calc(50% - 212px); */
 	margin: auto;
+	background-color: #F49190;
 }
 
 body .game input {
@@ -363,7 +365,7 @@ body .game input {
 body .game_loader {
 	position: fixed;
 	z-index: 15;
-	background: #141415;
+	background: #F5918F;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -407,7 +409,7 @@ body .game_loader__inner .logo img {
 }
 
 body .game_loader__inner span {
-	color: rgb(214, 179, 248);
+	color: white;
 	display: block;
 	opacity: 0;
 	margin-top: 8px;
@@ -436,7 +438,7 @@ body .game_loader__inner .bar_inner {
 }
 
 body .game_loader__inner .subtitle {
-	color: #f49112;
+	color: white;
 	margin: -18px 0px 40px 0;
 	opacity: 0;
 	-webkit-animation: fadeIn 1.5s 1.5s forwards;
@@ -505,7 +507,7 @@ body .game_intro .overlay {
 	left: 0;
 	opacity: 1;
 	height: 260%;
-	background: #141415;
+	background: #F5918F;
 	z-index: -1;
 	pointer-events: all;
 	transition: all 4s 0.7s !important;
@@ -521,8 +523,8 @@ body .game_intro .dialogue {
 	text-align: center;
 	transition: all 0.2s 0.2s;
 	pointer-events: none;
-	background: white;
-	color: #141415;
+	background: #F7A3A1;
+	color: white;
 }
 
 body .game_intro .dialogue.end {
