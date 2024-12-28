@@ -1087,3 +1087,18 @@ body .game_intro .dialogue label:hover {
 		transform: translateX(0px) scale(0.5);
 	}
 }
+
+
+/* For desktop (hover-enabled devices) */
+@media (hover: hover) {
+    .container:hover .card {
+        top: -90px;
+        transition: top 1s;
+    }
+}
+
+/* For touch devices or manual activation */
+.container.active .card {
+    top: -90px;
+    transition: top 1s;
+}

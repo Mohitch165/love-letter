@@ -10,10 +10,16 @@ function domReady(fn) {
 domReady(() => {
     document.getElementsByClassName("card").item(0).addEventListener("click", function(){
         document.getElementsByClassName("modal").item(0).classList.add("is-visible");
-    })
+    });
+    
     document.getElementsByClassName("modal").item(0).addEventListener("click", function(e){
         if(e.target.classList.contains("is-visible")){
             e.target.classList.remove("is-visible");
         }
-    })
+    });
+
+    const container = document.querySelector(".container");
+    container.addEventListener("click", function () {
+        this.classList.toggle("active");
+    });
 });
